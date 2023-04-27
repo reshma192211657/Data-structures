@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+   int num;
+   
+   printf("Enter a set of numbers (separated by spaces): ");
+   while (scanf("%d", &num) == 1) {  // keep reading numbers until the user enters something other than a number
+       if (num % 2 == 0) {
+           printf("%d is even\n", num);
+       } else {
+           printf("%d is odd\n", num);
+       }
+   }
+   
+   return 0;
+}
+
+OUTPUT:
+Enter a set of numbers (separated by spaces): 53
+53 is odd
+56
+56 is even
+39
+39 is odd
+22
+22 is even
+6
+6 is even
+7
+7 is odd
